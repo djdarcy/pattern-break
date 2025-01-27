@@ -64,7 +64,7 @@ pip install pyperclip rich
 ```bash
 pattern-break.py --check both -d . -r -gt 100 --multi-range -fmt summary --stats -o stdout -xd .git -xd .sync -o file -f missing.txt
 ```
-Searches the for pattern breaks in filenames and folder names (`--check both`) starting from the current directory (`-d .`) recursively (`-r`), excluding git folders and sync folders, (`-xd .git -xd .sync`), for patterns matching a group threshhold of 100 files (`-gt 100`), looking for in filename patterns as well (`--multi-range`), formatting the output in a JSON-like summary format showing statistics (`--stats`) and outputting to the console (`-o stdout`) and to file (`-o file -f missing.txt`)
+Searches the for pattern breaks in filenames and folder names (`--check both`) starting from the current directory (`-d .`) recursively (`-r`), excluding git folders and sync folders, (`-xd .git -xd .sync`), for patterns matching a group threshhold of 100 files (`-gt 100`), looking for in-filename patterns as well (`--multi-range`), formatting the output in a JSON-like summary format (`-fmt summary`) showing statistics (`--stats`) and outputting to the console (`-o stdout`) and to file (`-o file -f missing.txt`)
 
 
 #### Basic Gap Detection
